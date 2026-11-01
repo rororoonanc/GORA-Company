@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GORA | Innovative, Useful & Meaningful Products</title>
+  <meta name="description"
+    content="GORA is a Filipino company creating innovative, useful, and meaningful products. Discover TANGORA, our first product, and find us in Batasan Hills, Quezon City." />
+  <meta name="theme-color" content="#F5EFE6" />
+
+  <!-- Favicon (uses the logo) -->
+  <link rel="icon" type="image/png" href="assets/images/gora%20logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/gora%20logo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Marks the page as JS-enabled so reveal animations only hide content when JS can show it again -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============ SVG ICON SPRITE (inline, no external library) ============ -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true" focusable="false">
+    <symbol id="i-facebook" viewBox="0 0 24 24">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    </symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+    </symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24">
+      <path d="M9 12a4 4 0 1 0 4 4V3a5 5 0 0 0 5 5" />
+    </symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24">
+      <path
+        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+      <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+      <polyline points="22,6 12,13 2,6" />
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+      <circle cx="12" cy="10" r="3" />
+    </symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24">
+      <polyline points="15 18 9 12 15 6" />
+    </symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24">
+      <polyline points="9 18 15 12 9 6" />
+    </symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24">
+      <line x1="12" y1="19" x2="12" y2="5" />
+      <polyline points="5 12 12 5 19 12" />
+    </symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24">
+      <line x1="12" y1="5" x2="12" y2="19" />
+      <polyline points="19 12 12 19 5 12" />
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" role="status" aria-live="polite">
+    <div class="preloader__inner">
+      <img src="assets/images/gora logo.jpg" alt="GORA logo" class="preloader__logo" width="96" height="96"
+        data-fallback="logo" />
+      <span class="preloader__text">GORA</span>
+      <span class="preloader__bar" aria-hidden="true"></span>
+      <span class="visually-hidden">Loading</span>
+    </div>
+  </div>
+
+  <!-- ============ 1. NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="brand" aria-label="GORA – back to top">
+        <img src="assets/images/gora logo.jpg" alt="GORA logo" class="brand__logo" width="44" height="44"
+          data-fallback="logo" />
+        <span class="brand__name">GORA</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="navLinks" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link is-active">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#products" class="nav__link">Products</a></li>
+          <li><a href="#location" class="nav__link">Location</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 2. HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__blob hero__blob--one" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--two" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <span class="eyebrow hero-anim" style="--d:.1s">GORA Company</span>
+          <h1 id="hero-title" class="hero-anim" style="--d:.25s">Let's<span class="accent"> Go</span> Further</h1>
+          <p class="hero__tagline hero-anim" style="--d:.4s">
+            We create products that help people explore new ideas and go further. Meet TANGORA, our very first product,
+            made for the indoor spaces you care about.
+          </p>
+          <div class="hero__actions hero-anim" style="--d:.55s">
+            <a href="#products" class="btn btn--primary">
+              Explore Our Product
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-arrow-down" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero__parallax" id="heroParallax">
+            <div class="hero__float">
+              <div class="img-frame hero__frame" data-label="Hero image · assets/images/hero.jpg">
+                <img src="assets/images/gora logo.jpg" alt="GORA TANGORA product showcase" width="640" height="800"
+                  fetchpriority="high" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. ABOUT ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__media reveal reveal-left">
+          <div class="img-frame about__frame" data-label="About image · assets/images/gora logo.jpg">
+            <img src="assets/images/gora logo.jpg" alt="About GORA company" width="640" height="560" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="about__content reveal reveal-right">
+          <span class="eyebrow">Our Story</span>
+          <h2 id="about-title" class="section-title">About GORA</h2>
+          <span class="divider" aria-hidden="true"></span>
+          <p>
+            The name GORA is derived from TANGORA, the company’s first product. The name also comes from the Filipino
+            expression “Gora,” which is a playful way of saying “Go.” It represents the company’s goal of encouraging
+            people to move forward, explore new ideas, and go further. The name reflects the company’s willingness to
+            create products that are innovative, useful, and meaningful to consumers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. PRODUCTS ============ -->
+    <section class="section products" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-head reveal reveal-up">
+          <span class="eyebrow">Our Product</span>
+          <h2 id="products-title" class="section-title">Our Product: TANGORA</h2>
+          <span class="divider divider--center" aria-hidden="true"></span>
+        </div>
+
+        <!-- Carousel (built from scratch) -->
+        <div class="carousel reveal reveal-up" id="carousel" role="region" aria-roledescription="carousel"
+          aria-label="TANGORA product variants" tabindex="0">
+          <div class="carousel__viewport">
+            <div class="carousel__track" id="carouselTrack">
+
+              <!-- Slide 1 -->
+              <figure class="carousel__slide" role="group" aria-roledescription="slide" aria-label="1 of 4">
+                <div class="carousel__info">
+                  <span class="carousel__tag">50 mL</span>
+                  <h3 class="carousel__title">Lemongrass</h3>
+                  <p class="carousel__text">TANGORA in a 50 mL bottle, available in the Lemongrass variant.</p>
+                </div>
+                <div class="carousel__media">
+                  <div class="img-frame">
+                    <div class="carousel__photo" role="img" aria-label="TANGORA 50 mL Lemongrass"
+                      style="background-image:url('assets/images/50ml%20lemongrass.png')"></div>
+                  </div>
+                </div>
+              </figure>
+
+              <!-- Slide 2 -->
+              <figure class="carousel__slide" role="group" aria-roledescription="slide" aria-label="2 of 4">
+                <div class="carousel__info">
+                  <span class="carousel__tag">100 mL</span>
+                  <h3 class="carousel__title">Lemongrass</h3>
+                  <p class="carousel__text">TANGORA in a 100 mL bottle, available in the Lemongrass variant.</p>
+                </div>
+                <div class="carousel__media">
+                  <div class="img-frame">
+                    <div class="carousel__photo" role="img" aria-label="TANGORA 100 mL Lemongrass"
+                      style="background-image:url('assets/images/100ml%20lemongrass.png')"></div>
+                  </div>
+                </div>
+              </figure>
+
+              <!-- Slide 3 -->
+              <figure class="carousel__slide" role="group" aria-roledescription="slide" aria-label="3 of 4">
+                <div class="carousel__info">
+                  <span class="carousel__tag">50 mL</span>
+                  <h3 class="carousel__title">Lemongrass + Lavender</h3>
+                  <p class="carousel__text">TANGORA in a 50 mL bottle, available in the Lemongrass + Lavender variant.
+                  </p>
+                </div>
+                <div class="carousel__media">
+                  <div class="img-frame">
+                    <div class="carousel__photo" role="img" aria-label="TANGORA 50 mL Lemongrass + Lavender"
+                      style="background-image:url('assets/images/50ml%20lemongrass%20+%20lavender.png')"></div>
+                  </div>
+                </div>
+              </figure>
+
+              <!-- Slide 4 -->
+              <figure class="carousel__slide" role="group" aria-roledescription="slide" aria-label="4 of 4">
+                <div class="carousel__info">
+                  <span class="carousel__tag">100 mL</span>
+                  <h3 class="carousel__title">Lemongrass + Lavender</h3>
+                  <p class="carousel__text">TANGORA in a 100 mL bottle, available in the Lemongrass + Lavender variant.
+                  </p>
+                </div>
+                <div class="carousel__media">
+                  <div class="img-frame">
+                    <div class="carousel__photo" role="img" aria-label="TANGORA 100 mL Lemongrass + Lavender"
+                      style="background-image:url('assets/images/100ml%20lemongrass%20+%20lavender.png')"></div>
+                  </div>
+                </div>
+              </figure>
+
+            </div>
+          </div>
+
+          <button class="carousel__btn carousel__btn--prev" id="carouselPrev" type="button" aria-label="Previous slide">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="carousel__btn carousel__btn--next" id="carouselNext" type="button" aria-label="Next slide">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Choose slide"></div>
+        </div>
+        <p class="products__desc reveal reveal-up" style="--d:.15s">
+          TANGORA will be available in 50 mL and 100 mL sizes to provide consumers with options based on their needs and
+          budget. The product is intended for indoor spaces such as homes, apartments, condominiums, offices, and other
+          establishments. Its effectiveness may vary depending on factors such as room size, number of diffuser sticks
+          used, and the level of mosquito presence.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 5. LOCATION ============ -->
+    <section class="section location" id="location" aria-labelledby="location-title">
+      <div class="container">
+        <div class="section-head reveal reveal-up">
+          <span class="eyebrow">Visit Us</span>
+          <h2 id="location-title" class="section-title">Find Us</h2>
+          <span class="divider divider--center" aria-hidden="true"></span>
+        </div>
+
+        <div class="location__grid">
+          <div class="location__card reveal reveal-left">
+            <span class="location__icon" aria-hidden="true">
+              <svg class="icon icon--lg">
+                <use href="#i-pin" />
+              </svg>
+            </span>
+            <h3>GORA Company</h3>
+            <address>
+              102 Fortune St., Freedom Park IV,<br />
+              Batasan Hills, Quezon City,<br />
+              Metro Manila
+            </address>
+            <a class="btn btn--primary" target="_blank" rel="noopener noreferrer"
+              href="https://www.google.com/maps/search/?api=1&amp;query=102+Fortune+St.,+Freedom+Park+IV,+Batasan+Hills,+Quezon+City,+Metro+Manila">
+              Get Directions
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-arrow-right" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="location__map reveal reveal-right">
+            <iframe title="Map showing GORA at 102 Fortune St., Freedom Park IV, Batasan Hills, Quezon City"
+              src="https://www.google.com/maps?q=102+Fortune+St.,+Freedom+Park+IV,+Batasan+Hills,+Quezon+City,+Metro+Manila&amp;output=embed"
+              loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head reveal reveal-up">
+          <span class="eyebrow">Contact</span>
+          <h2 id="contact-title" class="section-title">Get in Touch</h2>
+          <span class="divider divider--center" aria-hidden="true"></span>
+        </div>
+
+        <div class="contact__grid">
+          <a class="tile reveal reveal-up" style="--d:0s" href="https://www.facebook.com/profile.php?id=61594441312145"
+            target="_blank" rel="noopener noreferrer" aria-label="Facebook: Gora Company (opens in a new tab)">
+            <span class="tile__icon"><svg class="icon icon--lg" aria-hidden="true">
+                <use href="#i-facebook" />
+              </svg></span>
+            <span class="tile__label">Facebook</span>
+            <span class="tile__handle">Gora Company</span>
+          </a>
+
+          <a class="tile reveal reveal-up" style="--d:.08s" href="https://www.instagram.com/goracompany.official/"
+            target="_blank" rel="noopener noreferrer" aria-label="Instagram: goracompany.official (opens in a new tab)">
+            <span class="tile__icon"><svg class="icon icon--lg" aria-hidden="true">
+                <use href="#i-instagram" />
+              </svg></span>
+            <span class="tile__label">Instagram</span>
+            <span class="tile__handle">goracompany.official</span>
+          </a>
+
+          <a class="tile reveal reveal-up" style="--d:.16s" href="https://www.tiktok.com/@goracompany.official"
+            target="_blank" rel="noopener noreferrer" aria-label="TikTok: goracompany.official (opens in a new tab)">
+            <span class="tile__icon"><svg class="icon icon--lg" aria-hidden="true">
+                <use href="#i-tiktok" />
+              </svg></span>
+            <span class="tile__label">TikTok</span>
+            <span class="tile__handle">goracompany.official</span>
+          </a>
+
+          <a class="tile reveal reveal-up" style="--d:.24s" href="https://www.youtube.com/@GoraCompany" target="_blank"
+            rel="noopener noreferrer" aria-label="YouTube: Gora Company (opens in a new tab)">
+            <span class="tile__icon"><svg class="icon icon--lg" aria-hidden="true">
+                <use href="#i-youtube" />
+              </svg></span>
+            <span class="tile__label">YouTube</span>
+            <span class="tile__handle">Gora Company</span>
+          </a>
+
+          <a class="tile reveal reveal-up" style="--d:.32s" href="mailto:goracompany.official@gmail.com" target="_blank"
+            rel="noopener noreferrer" aria-label="Gmail: goracompany.official@gmail.com (opens in a new tab)">
+            <span class="tile__icon"><svg class="icon icon--lg" aria-hidden="true">
+                <use href="#i-mail" />
+              </svg></span>
+            <span class="tile__label">Gmail</span>
+            <span class="tile__handle">goracompany.official@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 7. FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="brand brand--light" aria-label="GORA – back to top">
+          <img src="assets/images/gora logo.jpg" alt="GORA logo" class="brand__logo" width="44" height="44"
+            data-fallback="logo" />
+          <span class="brand__name">GORA</span>
+        </a>
+        <p>Innovative, useful, and meaningful products that help people move forward and go further.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Footer navigation">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h3>Visit Us</h3>
+        <address>
+          102 Fortune St., Freedom Park IV,<br />
+          Batasan Hills, Quezon City,<br />
+          Metro Manila
+        </address>
+        <div class="socials" aria-label="Social media links">
+          <a href="https://www.facebook.com/profile.php?id=61594441312145" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook"><svg class="icon" aria-hidden="true">
+              <use href="#i-facebook" />
+            </svg></a>
+          <a href="https://www.instagram.com/goracompany.official/" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram"><svg class="icon" aria-hidden="true">
+              <use href="#i-instagram" />
+            </svg></a>
+          <a href="https://www.tiktok.com/@goracompany.official" target="_blank" rel="noopener noreferrer"
+            aria-label="TikTok"><svg class="icon" aria-hidden="true">
+              <use href="#i-tiktok" />
+            </svg></a>
+          <a href="https://www.youtube.com/@GoraCompany" target="_blank" rel="noopener noreferrer"
+            aria-label="YouTube"><svg class="icon" aria-hidden="true">
+              <use href="#i-youtube" />
+            </svg></a>
+          <a href="mailto:goracompany.official@gmail.com" aria-label="Email GORA"><svg class="icon" aria-hidden="true">
+              <use href="#i-mail" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="year">2026</span> GORA. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg class="icon" aria-hidden="true">
+      <use href="#i-arrow-up" />
+    </svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
